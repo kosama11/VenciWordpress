@@ -1,0 +1,251 @@
+body{
+    height: 100%;
+}
+
+text {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    pointer-events: none;
+}
+
+#chart{
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    //display: none;
+}
+
+#background {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: #000000 repeat;
+    opacity: 0.8;
+    //display: none;
+}
+
+#box-pre-background{
+    position: absolute;
+    top: 10%;
+    width: 900px;
+    max-width: 900px;
+    height: 650px;
+    z-index: -1;
+    background: #05284a;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#box-background{
+    position: absolute;
+    width: 900px;
+    max-width: 900px;
+    height: 450px;
+    z-index: -1;
+    background: url('../images/background.jpg') 900px 450px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 165px;
+    height: 55px;
+    background: url("../images/toyotavenci_logo.png");
+}
+
+#first-window{
+    width: 600px;
+    height: 350px;
+    background: url("../images/first_window.jpg");
+    border-radius: 10px;
+}
+
+#howtoplay-window{
+    width: 600px;
+    height: 350px;
+    background: #05284a;
+    border-radius: 10px;
+    display: none;
+}
+
+#rules-window{
+    width: 600px;
+    height: 350px;
+    background: #05284a;
+    border-radius: 10px;
+    display: none;
+}
+
+#prize-window{
+    width: 600px;
+    height: 350px;
+    background: #05284a;
+    border-radius: 10px;
+    display: none;
+}
+
+#game-button{
+    position: absolute;
+    bottom: -10px;
+    width: 100%;
+}
+
+#game-button li{
+    display: inline-block;
+    padding: 5px 15px;
+    margin-left: 10px;
+    border: 1px solid #6a8ccb;
+    border-radius: 10px;
+    font-size: 1.5em;
+}
+
+#game-button li:hover{
+    background: #07325b;
+}
+
+#game-button li:last-child{
+    position: absolute;
+    right: 40px;
+    background: red;
+    border: none;
+    color: #fff;
+}
+
+#game-button li:last-child:hover{
+    background: #c71111;
+    -webkit-box-shadow: 0 0 5px 1px #FFFFFF;
+    -moz-box-shadow: 0 0 5px 1px #FFFFFF;
+    box-shadow: 0 0 10px 1px #FFFFFF;
+}
+
+#game-button li a:last-child{
+    color: #fff;
+}
+
+#game-button>li>a{
+    color: #6a8ccb;
+}
+
+#youwin{
+    width: 600px;
+    height: 350px;
+    background: url("../images/youwin.jpg");
+    border-radius: 10px;
+    display: none;
+    -webkit-box-shadow: 1px 1px 40px 20px #ffffff;
+    -moz-box-shadow: 1px 1px 40px 20px #ffffff;
+    box-shadow: 1px 1px 40px 20px #ffffff;
+}
+
+#ring-circle{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    background: url("../images/circle.png");
+    z-index: 4;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#win-result{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    top: 120px;
+    font-size: 2em;
+    color: #ffffff;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#win-button{
+    position: absolute;
+    bottom: 200px;
+    left: 230px;
+    padding: 15px;
+    border: 1px solid #6a8ccb;
+    border-radius: 10px;
+    font-size: 1.5em;
+    background: #05284a;
+}
+
+#win-button:hover{
+    background: #07325b;
+}
+
+#form-box{
+    width: 600px;
+    height: 350px;
+    background: #05284a;
+    border-radius: 10px;
+    display: none;
+}
+
+#form-box>p{
+    color: #ffffff;
+    padding: 10px;
+}
+
+#form-box>p:last-child{
+    font-size: 0.8em;
+
+}
+
+#youwin-form{
+    display: block;
+    position: relative;
+    padding: 0 135px 0 135px;
+    margin-top: -40px;
+}
+
+#formata{
+    align-content: center;
+}
+
+#firstname{
+    width: 145px;
+    display: inline-block;
+    margin: 0 0 0 10px;
+}
+
+#lastname{
+    width: 145px;
+    display: inline-block;
+    margin: 10px;
+    margin-bottom: 0;
+}
+
+#email{
+    width: 300px;
+    display: block;
+    margin: 10px;
+}
+
+#tel{
+    width: 300px;
+    display: block;
+    margin: 10px;
+}
+
+#send-to-db{
+    width: 300px;
+    display: block;
+    margin: 10px;
+}
