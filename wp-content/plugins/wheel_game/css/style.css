@@ -339,3 +339,96 @@ text {
 .span-wheel{
     font-size: 16px;
 }
+
+#onoff-game{
+    display: flex;
+}
+
+#onoff-game>p{
+    font-size: 16px;
+}
+
+#onoff-game>div{
+    position: relative;
+    top: 13px;
+    vertical-align: middle;
+    flex: 1;
+}
+
+#period-game{
+    display: flex;
+    justify-content: center;
+}
+
+#period-game>p{
+    font-size: 16px;
+    flex: 1;
+}
+
+#period-game>div>span>input[type="date"]{
+    width: 110px;
+    flex: 1;
+    cursor: pointer;
+    background: url("../images/calendar-icon.png") no-repeat right #FFFFFF;
+}
+
+#period-game>div>span{
+    position: relative;
+    display: block;
+    top: 8px;
+}
+
+#submit-game{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+#submit-game>p{
+    position: relative;
+    bottom: 10px;
+    font-size: 16px;
+    flex: 1;
+}
+
+.submit-button-wheel{
+    background: #2196F3;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+
+.submit-button-wheel:hover{
+    background: #209cfe;
+}
+
+.errorWheel{
+    background: #ff5353;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.successfullyWheel{
+    background: #8fcf3c;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    border: 1px solid #8b8b8b;
+}
+
+.errorWheel:before{
+    position: relative;
+    padding-right: 10px;
+    content: url("../images/warning.png");
+    top: 5px;
+}
+
+.successfullyWheel:before{
+    position: relative;
+    padding-right: 10px;
+    content: url("../images/succes.png");
+    top: 5px;
+}

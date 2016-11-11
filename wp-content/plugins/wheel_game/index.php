@@ -11,7 +11,7 @@ Text Domain:
 */
 
 
-
+//Create table wp_wheel_game
 function wheel_game_activation() {
     require_once( ABSPATH . '/wp-admin/includes/upgrade.php' );
     global $wpdb;
@@ -34,6 +34,7 @@ function wheel_game_activation() {
 	}
 }
 register_activation_hook(__FILE__, 'wheel_game_activation');
+
 
 
 function addMenu()
